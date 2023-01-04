@@ -1,0 +1,380 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* body */
+body{
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    --color-primary: brown;
+    --secondary-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#first-section{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(8,5,6,0.5), rgba(0,0,0,0.3)), url("./images/check1.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+/* Styling the navigation bar */
+nav{
+    margin: 0;
+    padding: 0;
+    top:0;
+    background-color:cadetblue;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* h1 in the nav */
+nav h1{
+    color: var(--color-primary);;
+    font-size: 2rem;
+    font-style: italic; 
+    padding-left: 100px; 
+}
+
+/* UL in the nav */
+ul{
+    font-size: 15px;
+    display: flex;
+    text-transform: uppercase;
+    padding-right: 100px;
+}
+
+/* Styling the li in the ul of the nav */
+ul > li{
+    padding-top: 15px;
+    list-style: none;
+    padding-left: 10px;
+    display: flex;
+    padding-right: 30px;
+}
+
+/* Styling the anchor tags in the li in the nav */
+ul > li a{
+    text-decoration: none;
+    color:black;
+    letter-spacing: 0.5px;
+    position: relative;
+    curser: pointer;
+}
+
+/* To include after effect on a link */
+a:after{
+    content: "";
+    position: absolute;
+    background-color: var(--color-primary);
+    height:2px;
+    width: 0;
+    left: 0;
+    bottom: 50%;
+    transition: 0.5s;
+}
+/* Hovering in the links in the nav bar */
+
+a:hover{
+    color: blue;
+}
+a:hover::after{
+    width: 100%;
+    
+}
+
+/* Image div */
+.image{
+    max-width: 40%;
+    float: left;
+    padding-left: 10px;
+}
+.image img{
+    width: 300px;
+    height: 240px;
+    border-radius: 13px;
+}
+.images{
+    transition: 0.5s;
+    color: rgba(0,0,0,1);
+}
+.images:hover{
+    width: 300px;
+    height: 240px;
+    transform: scale(1.3);
+    z-index: 1;
+
+}
+
+.home-content{
+    float: right;
+    max-width: 50%;
+}
+
+.home-content p{
+    font-size: 2rem;
+    margin: 40px auto;
+    max-width: 80%;
+    padding-top: 70px;
+    color: white;
+}
+
+#home-btn{
+    width: 170px;
+    height: 70px;
+    font-size: 26px;
+    margin-top: 50px;
+    margin-left: 250px;
+    border-radius: 8px;
+    border-color: white;
+    background-color: transparent;
+    color: white;
+}
+
+#home-btn:hover{
+    background-color: lightblue;
+    outline: none;
+    color: black;
+    transition: 0.4s;
+    cursor: pointer;
+   
+}
+
+.first-h2{
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+}
+
+h2{
+    color: var(--color-primary);
+    font-size: 14px;
+}
+
+/* Catalogue */
+.cata-body{
+    padding: 0;
+    margin: 0;
+    background-size: cover;
+    background: white;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.products{
+    width:80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.products h2{
+    font-size: 2rem;
+}
+
+.cata-images{
+    margin: 10px;
+    width: 800px;
+    height: 400px;
+    box-shadow: -1px 0 10px grey;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.cata-images img{
+    width: 300px;
+    height:300px;
+    border-radius: 15px;
+}
+
+.rows{
+    margin: 0 auto;
+    width:900px;
+    height: 400px;
+    margin-top: 20px;
+    display: flex;
+    
+}
+
+
+.btn{
+    width:140px;
+    height: 50px;
+    margin-top: 20px;
+    font-size: 18px
+}
+
+.btn:hover{
+    color: white;
+    border: 1px solid burlywood;
+    background-color: burlywood;
+    transition: 0.4s;
+}
+
+/* About page */
+
+.about-body{
+    background: white;
+}
+
+.about-content img{
+    width:480px;
+    height: 480px;
+}
+.about-content{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.about-img{
+    margin-left: 50px;
+    margin-right: 90px;
+}
+
+.about-div p{
+    width: 80%;
+    font-size: 20px;
+}
+
+.about-div h1{
+    text-align: center;
+    font-size: 30px;
+    margin-right: 180px;
+    padding-bottom: 20px;
+    box-shadow: 2px 0 2px 2px cadetblue;
+   
+}
+
+.about{
+    text-align: center;
+    font-size: 3rem;
+    color: var(--color-primary);
+    margin-top: 0;
+    padding-top: 20px;
+}
+
+.about-div button{
+    width: 140px;
+    height: 40px;
+    background-color: cadetblue;
+    border-radius: 7px;
+    border-color: white;
+}
+
+.about-div button:hover{
+    color: white;
+    background-color:teal;
+    transition: 0.4s;
+}
+
+/* Contact us page */
+.contact-body{
+    background: white;
+}
+
+.contact-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 260px;
+    max-width: fit-content;
+    margin-left: 250px;
+}
+
+.contact-address{
+    margin-left:  60px;
+    font-size: 20px;
+    background-color:grey;
+    width: 400px;
+    height: 400px;
+    padding-left: 40px;
+    padding-top:40px;
+}
+
+.contact-form{
+    display: inline-block;
+    width: 100%;
+    margin-right: 6px;
+    background-color: grey;
+    width:400px;
+    height: 400px;
+    font-size: 20px;
+    padding-left: 40px;
+    padding-top:40px;
+    
+}
+input{
+    width: 100%;
+    max-width: 320px;
+    height: 35px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 4px;
+    border-bottom: 2px solid gray;
+    outline: none;
+}
+.text-class{
+    margin-bottom: 10px;
+    outline: none;
+    border: none;
+}
+.number{
+    font-size: 16px;
+    color:var(--color-primary);
+}
+
+.contact-btn{
+    width: 120px;
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 5px;
+    border:none;
+    background-color:lightblue;
+    color: black;
+}
+
+.contact-btn:hover{
+    background-color: blue;
+    color: white;
+    transition: 0.4s;
+}
+
+.contact-section h1{
+    text-align: center;
+    font-size: 2rem;
+    color: var(--color-primary);
+    padding-bottom: 20px;
+}
+
+.last-nav{
+    display: flex;
+    padding-left: 350px;
+}
+
+.last-nav ul >  li a{
+    font-size: 28px;
+    padding-top: 10px;
+    
+}
+
+footer{
+    background-color: cadetblue;
+    
+}
+
+.last-nav p{
+    text-align: center;
+    padding-top: 30px;
+    padding-left: 10px;
+    padding-right: 100px;
+}

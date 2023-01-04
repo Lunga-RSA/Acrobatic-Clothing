@@ -69,7 +69,7 @@ ul > li a{
 }
 
 /* To include after effect on a link */
-a:after{
+nav ul > li a:after{
     content: "";
     position: absolute;
     background-color: var(--color-primary);
@@ -359,6 +359,10 @@ input{
 .last-nav{
     display: flex;
     padding-left: 350px;
+    justify-content: space-between;
+    max-width: 100%;
+    max-height: fit-content;
+    margin-top: 80px;
 }
 
 .last-nav ul >  li a{
@@ -368,13 +372,10 @@ input{
 }
 
 footer{
-    background-color: cadetblue;
+    background-color: darkslategrey;
     
 }
 
 .last-nav p{
-    text-align: center;
-    padding-top: 30px;
-    padding-left: 10px;
-    padding-right: 100px;
+    padding-top: 20px;
 }
